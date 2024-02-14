@@ -568,8 +568,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
 }
 
@@ -596,14 +595,15 @@ body {
     justify-content: center;
     top: 24px;
     right: 24px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     background-color: #e7e9fc;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2e2f42;
+    padding: 0;
 
 }
 
@@ -614,10 +614,15 @@ body {
 .box-close-svg:hover,
 .box-close-svg:focus {
     background-color: var(--hover-color);
+    border: none;
 }
 
 .box-close-svg:hover .modal-close-svg {
-    fill: #fff;
+    fill: #ffffff;
+}
+
+.box-close-svg:focus .modal-close-svg {
+    fill: #ffffff;
 }
 
 .modal-content-text {
