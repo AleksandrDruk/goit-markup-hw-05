@@ -748,6 +748,7 @@ body {
 .policy-checkbox:checked+.policy-text .checkbox-style {
     background-color: var(--hover-color);
     border: none;
+    fill: var(--bg-team);
 }
 
 .checkbox-style-svg {
@@ -760,12 +761,11 @@ body {
 }
 
 
-.policy-text-span {
+.policy-text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    padding-left: 24px;
 }
 
 .policy-link {
