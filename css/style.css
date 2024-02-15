@@ -645,7 +645,7 @@ body {
     margin-bottom: 8px;
 }
 
-.modal-form label {
+.modal-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -739,6 +739,7 @@ body {
     height: 16px;
     margin-right: 8px;
     border-radius: 2px;
+    fill: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -746,7 +747,7 @@ body {
 
 .policy-checkbox:checked+.policy-text .checkbox-style {
     background-color: var(--hover-color);
-    border: 1px solid var(--hover-color);
+    border: none;
 }
 
 .checkbox-style-svg {
@@ -755,7 +756,7 @@ body {
 }
 
 .policy-checkbox:checked+.policy-text .checkbox-style-svg {
-    fill: #fff;
+    fill: var(--bg-team);
 }
 
 
@@ -767,10 +768,10 @@ body {
     padding-left: 24px;
 }
 
-.policy-text a {
+.policy-link {
     line-height: 133%;
     text-decoration: underline;
-    color: var(--hover-color);
+    color: var(--btn-color);
 }
 
 .form-btn-send {
