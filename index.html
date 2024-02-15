@@ -451,18 +451,16 @@
           </div>
 
           <div class="modal-textarea-box">
-            <label for="subject">Comment</label>
-            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Text input" class="textarea-form"></textarea>
+            <label for="user-comment">Comment</label>
+            <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input" class="textarea-form"></textarea>
           </div>
           <div class="form-check">
-            <label class="label-check" for="modal-check">
-              <input type="checkbox" name="checkbox" id="modal-check" class="policy-checkbox" />
-              <span class="checkbox-style"></span>
-              <svg class="checkbox-style-svg" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-              <span class="policy-text">I accept the terms and conditions of the <a href="#">Privacy Policy</a></span>
-            </label>
+            <input type="checkbox" name="checkbox" id="user-privacy" class="policy-checkbox visually-hidden" value="true" />
+            <label for="user-privacy" class="policy-text">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
+            <span class="checkbox-style"></span>
+            <svg class="checkbox-style-svg" width="10" height="8">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
           </div>
           <button class="form-btn-send" type="submit">Send</button>
         </form>
